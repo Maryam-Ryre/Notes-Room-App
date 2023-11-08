@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bscs19072_reesnotes">
+
+    <uses-permission android:name= "android.permission.INTERNET" />
+    <uses-permission android:name= "android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bscs19072ReesNotes"
+        tools:targetApi="31">
+        <activity
+            android:name=".oneNoteView"
+            android:exported="false" />
+        <activity
+            android:name=".Notes"
+            android:exported="false" />
+        <activity
+            android:name=".AuthorsHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecturesHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewLecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageCoursesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Bscs19072ReesNotes.NoActionBar" />
+        <activity
+            android:name=".AdminAddNewCourse"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCoursesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Degree"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
